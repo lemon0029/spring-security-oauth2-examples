@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          oauth2-client:
+            provider: spring-security-oauth2
+            client-id: oauth2-client
+            client-name: oauth2-client
+            client-secret: "AutW573n6W3bngqoCrAiH8P3UJwm0be"
+            client-authentication-method: client_secret_post
+            authorization-grant-type: authorization_code
+            redirect-uri: http://127.0.0.1:8080/login/oauth2/code/oauth2-client
+            scope: openid,profile
+        provider:
+          spring-security-oauth2:
+            authorization-uri: http://192.168.1.2:9000/oauth2/authorize
+            token-uri: http://192.168.1.2:9000/oauth2/token
+            jwk-set-uri: http://192.168.1.2:9000/oauth2/jwks
