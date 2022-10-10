@@ -21,6 +21,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity5")
+	implementation("org.springframework:spring-webflux")
+	implementation("io.projectreactor.netty:reactor-netty")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
